@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #65b3d7, #58747c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.stopwatch-container {
+  background: white;
+  border-radius: 20px;
+  padding: 40px 50px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #132ad6;
+  font-size: 1.8rem;
+}
+
+.display {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #222;
+  margin: 20px 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1 1 45%;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.start { background-color: #eab844; color: #333; }
+.pause { background-color: #ab8eea; color: #333; }
+.reset { background-color: #f055e0; color: #333}
+.lap { background-color: #8ae763; color: #333}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.lap-list {
+  margin-top: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.lap-list li {
+  padding: 10px;
+  background-color: #f0f0f0;
+  margin-bottom: 6px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.lap-list li:nth-child(odd) {
+  background-color: #e0e7ff;
+}
